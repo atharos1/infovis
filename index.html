@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,58 +14,149 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <style>
+        .fluorish-title {
+            font-family: inherit;
+            font-size: 1.6rem;
+            line-height: 1.2;
+            font-weight: bold;
+            color: rgb(51, 51, 51);
+            margin: 0px;
+            padding-top: 0rem;
+            text-transform: uppercase;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .my-sticky {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            padding: 50px;
+            font-size: 20px;
+        }
+    </style>
 </head>
+
 <body>
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12 mt-3">
-                <div class="card hoverable animated fadeInDownBig fadeIn slower">
-                    <div class="card-body">
-                        <div class="flourish-embed flourish-chart" data-src="visualisation/3860660" data-url="https://flo.uri.sh/visualisation/3860660/embed" aria-label="">
-                            <script src="https://public.flourish.studio/resources/embed.js"></script>
-                        </div>   
+            <div class="col-12 col-lg-10">
+                <div class="row" id="introduction">
+                    <div class="col-12 mt-3">
+                        <div class="card hoverable animated fadeInDownBig fadeIn slower">
+                            <div class="card-body">
+                                <p class="fluorish-title">
+                                    Relato de una (paupérrima) gestión horaria
+                                </p>
+                                <p>El siguiente trabajo pretende representar apropiadamente los resultados de un estudio
+                                    realizado sobre mi distribución de actividades en el tiempo durante este segundo
+                                    cuatrimestre de 2020.</p>
+                                <p>La duración de las clases dictadas, materias cursadas y horas de trabajo son las que
+                                    estipula secretaría académica / contrato de trabajo.</p>
+                                <p>Las horas de sueño se calcularon a partir de datos extraídos de una aplicación de
+                                    alarma inteligente, entre el 18 de agosto y el 26 de septiembre del año 2020.</p>
+                                <p>Sin más que agregar, acompáñenme a contemplar esta triste historia...</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
 
-        <div class="row">
-            <div class="col-lg-6 col-12 my-3">
-                <div class="card hoverable animated fadeInLeftBig fadeIn slower">
-                    <div class="card-body">
-                        <div class="flourish-embed flourish-chart" data-src="visualisation/3860825" data-url="https://flo.uri.sh/visualisation/3860825/embed" aria-label="">
-                            <script src="https://public.flourish.studio/resources/embed.js"></script>
+                <div class="row" id="bars-activities">
+                    <div class="col-12">
+                        <div class="card hoverable animated fadeInDownBig fadeIn slower">
+                            <div class="card-body">
+                                <div class="flourish-embed flourish-chart" data-src="visualisation/3860660"
+                                    data-url="https://flo.uri.sh/visualisation/3860660/embed" aria-label="">
+                                    <script src="https://public.flourish.studio/resources/embed.js"></script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" id="pie-activities">
+                    <div class="col-12">
+                        <div class="card hoverable animated fadeInDownBig fadeIn slower">
+                            <div class="card-body">
+                                <div class="flourish-embed flourish-chart" data-src="visualisation/3860825"
+                                    data-url="https://flo.uri.sh/visualisation/3860825/embed" aria-label="">
+                                    <script src="https://public.flourish.studio/resources/embed.js"></script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" id="bars-sleep">
+                    <div class="col-12">
+                        <div class="card hoverable animated fadeInDownBig fadeIn slower">
+                            <div class="card-body">
+                                <div class="flourish-embed flourish-chart" data-src="visualisation/3920750"
+                                    data-url="https://flo.uri.sh/visualisation/3920750/embed" aria-label="">
+                                    <script src="https://public.flourish.studio/resources/embed.js"></script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" id="pie-sleep">
+                    <div class="col-12">
+                        <div class="card hoverable animated fadeInDownBig fadeIn slower">
+                            <div class="card-body">
+                                <div class="card-body">
+                                    <div class="flourish-embed flourish-chart" data-src="visualisation/3921036"
+                                        data-url="https://flo.uri.sh/visualisation/3921036/embed" aria-label="">
+                                        <script src="https://public.flourish.studio/resources/embed.js"></script>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 col-12 my-3">
-                <div class="card hoverable animated fadeInRightBig fadeIn slower">
-                    <div class="card-body">
-                        <div class="flourish-embed flourish-chart" data-src="visualisation/3860825" data-url="https://flo.uri.sh/visualisation/3860825/embed" aria-label="">
-                            <script src="https://public.flourish.studio/resources/embed.js"></script>
-                        </div>
-                    </div>
-                </div>
+            <div class="col hide-on-small-only m3 l2">
+                <ul class="section table-of-contents my-sticky">
+                    <li><a href="#introduction">Introducción</a></li>
+                    <li><a href="#bars-activities">Distribución horaria diaria por actividad</a></li>
+                    <li><a href="#pie-activities">Distribución horaria (Lunes a viernes)</a></li>
+                    <li><a href="#bars-sleep">Horas de sueño diarias y días hasta la próxima entrega</a></li>
+                    <li><a href="#pie-sleep">Porcentaje del tiempo de sueño por día de la semana</a></li>
+                </ul>
             </div>
         </div>
     </div>
-    
+
     <!-- JQuery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
     <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
     <script>
-        $( document ).ready(function() {
+        $(document).ready(function () {
             new WOW().init();
         });
     </script>
 
 </body>
+
 </html>
